@@ -3,7 +3,7 @@ import  Sequelize  from "sequelize";
 import  configDatabase from "../config/database";
 
 import User from "../App/models/User";
-import Product from "../App/models/Produtc";
+import Product from "../App/models/Product";
 
 const models = [User,Product];
 

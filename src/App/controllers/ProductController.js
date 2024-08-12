@@ -1,5 +1,5 @@
 import * as Yup from "yup";
-import Product from "../models/Produtc";
+import Product from "../models/Product";
 
 class ProductController {
   async store(request, response) {
