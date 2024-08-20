@@ -5,7 +5,8 @@ import UserController from "./App/controllers/UserController";
 import SessionController from "./App/controllers/SessionController";
 import ProductController from "./App/controllers/ProductController";
 import CategoryController from "./App/controllers/CategoryController";
-import authMiddlewares from "./middlewares/auth";
+import authMiddlewares from "./App/middlewares/auth";
+import OrderController from "./App/controllers/OrderController";
 
 const routes = new Router();
 
@@ -21,5 +22,8 @@ routes.get("/products", ProductController.index);
 routes.post("/categories", CategoryController.store);
 routes.get("/categories", CategoryController.index);
 
+routes.post("/order", OrderController.store);
+routes.get("/order", OrderController.index);
+routes.put("/order/:id", OrderController.update);
 
 export default routes;
